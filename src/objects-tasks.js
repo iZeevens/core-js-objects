@@ -124,9 +124,9 @@ function makeImmutable(obj) {
 function makeWord(lettersObject) {
   const newArray = Object.entries(lettersObject);
   const str = [];
-  newArray.forEach((item) => {
-    item[1].forEach((secondItem) => {
-      str[secondItem] = [item[0]];
+  newArray.forEach(([letter, secondLetter]) => {
+    secondLetter.forEach((secondItem) => {
+      str[secondItem] = letter;
     });
   });
   return str.join('');
