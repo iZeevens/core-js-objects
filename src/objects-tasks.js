@@ -192,8 +192,7 @@ function Rectangle(width, height) {
  *    { width: 10, height : 20 } => '{"height":10,"width":20}'
  */
 function getJSON(obj) {
-  const json = JSON.stringify(obj);
-  return json;
+  return JSON.stringify(obj);
 }
 
 /**
